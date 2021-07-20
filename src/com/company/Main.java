@@ -38,8 +38,9 @@ class  Person{
         count++;
         System.out.println("Creating an Object!!!");
     }
-    public Person(String nwname,int nwage ){
-        name=nwname;
-        age=nwage;
+    public Person(String name,int age ){
+        this ();//to call previous constructor
+        this.name=name;//also for calling other elements of class instead of using new variables
+        this.age=age;
     }
 }
