@@ -20,6 +20,8 @@ public class Main {
         Person p1=new Person("Priya",20);
         System.out.println(p1.name+" "+p1.age);
         System.out.println(Person.count);
+        Child c=new Child("PRINCE",2100);
+        System.out.println(c.name+" "+c.age);
 
 
     }
@@ -42,5 +44,11 @@ class  Person{
         this ();//to call previous constructor
         this.name=name;//also for calling other elements of class instead of using new variables
         this.age=age;
+    }
+}
+//Inheritance
+class Child extends Person{
+    public  Child(String name,int age) {
+        super(name, age);
     }
 }
