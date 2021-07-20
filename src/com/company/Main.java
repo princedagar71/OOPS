@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
 	// Classes,Objects & Method
         Person P=new Person();
+        System.out.println(P.name);
         P.name="Prince ";
         P.age=21;
         System.out.println(P.name+" "+P.age);
@@ -15,12 +16,18 @@ public class Main {
         System.out.println(p.name+" "+p.age);
         p.walk();
         System.out.println(p.walk(25));
+        System.out.println(Person.count);
+        Person p1=new Person("Priya",20);
+        System.out.println(p1.name+" "+p1.age);
+        System.out.println(Person.count);
+
 
     }
 }
 class  Person{
     String name;
     int age;
+    static int count;//if not dependent on object (mainly for constants or not dependent on class)
     void walk(){
         System.out.println("Walking!!!");
     }
@@ -28,7 +35,11 @@ class  Person{
         return (float) (steps*0.5);
     }
     public Person(){
+        count++;
         System.out.println("Creating an Object!!!");
     }
-
+    public Person(String nwname,int nwage ){
+        name=nwname;
+        age=nwage;
+    }
 }
