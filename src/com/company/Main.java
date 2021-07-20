@@ -22,6 +22,7 @@ public class Main {
         System.out.println(Person.count);
         Child c=new Child("PRINCE",2100);
         System.out.println(c.name+" "+c.age);
+        System.out.println(c.count);
 
 
     }
