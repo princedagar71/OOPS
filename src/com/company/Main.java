@@ -1,5 +1,7 @@
 package com.company;
 
+import encapsulation.Encapsulation;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -23,6 +25,8 @@ public class Main {
         Child c=new Child("PRINCE",2100);
         System.out.println(c.name+" "+c.age);
         System.out.println(c.count);
+        Encapsulation e=new Encapsulation();
+        e.doWork();
 
 
     }
